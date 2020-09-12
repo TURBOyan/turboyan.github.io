@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>特博工坊</title>
+  
+  
+  <link href="http://turboyan.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://turboyan.github.io/"/>
+  <updated>2020-09-12T03:33:27.130Z</updated>
+  <id>http://turboyan.github.io/</id>
+  
+  <author>
+    <name>TURBO yan</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hello</title>
+    <link href="http://turboyan.github.io/2020/09/04/hello/"/>
+    <id>http://turboyan.github.io/2020/09/04/hello/</id>
+    <published>2020-09-04T02:09:05.000Z</published>
+    <updated>2020-09-12T03:33:27.130Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hello_world</title>
+    <link href="http://turboyan.github.io/2020/09/03/hello-world/"/>
+    <id>http://turboyan.github.io/2020/09/03/hello-world/</id>
+    <published>2020-09-03T14:53:04.000Z</published>
+    <updated>2020-09-12T03:33:27.126Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/2020/09/03/hello-world/123.jpg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2020/09/03/hello-world/123.jpg&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
