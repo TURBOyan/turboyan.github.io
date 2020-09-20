@@ -2,56 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://turboyan.github.io/2020/09/20/MPU9250/</loc>
+    <loc>https://www.turbofactory.xyz/2020/09/20/MPU9250/</loc>
     
     <lastmod>2020-09-20</lastmod>
     
   </url>
   
   <url>
-    <loc>http://turboyan.github.io/tags/index.html</loc>
+    <loc>https://www.turbofactory.xyz/tags/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
   </url>
   
   <url>
-    <loc>http://turboyan.github.io/repository/index.html</loc>
+    <loc>https://www.turbofactory.xyz/repository/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
   </url>
   
   <url>
-    <loc>http://turboyan.github.io/links/index.html</loc>
+    <loc>https://www.turbofactory.xyz/links/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
   </url>
   
   <url>
-    <loc>http://turboyan.github.io/categories/index.html</loc>
+    <loc>https://www.turbofactory.xyz/categories/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
   </url>
   
   <url>
-    <loc>http://turboyan.github.io/books/index.html</loc>
+    <loc>https://www.turbofactory.xyz/books/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
   </url>
   
   <url>
-    <loc>http://turboyan.github.io/about/index.html</loc>
+    <loc>https://www.turbofactory.xyz/about/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
   </url>
   
   <url>
-    <loc>http://turboyan.github.io/404.html</loc>
+    <loc>https://www.turbofactory.xyz/404.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
@@ -59,7 +59,7 @@
   
 
   <url>
-    <loc>http://turboyan.github.io/</loc>
+    <loc>https://www.turbofactory.xyz/</loc>
     <lastmod>2020-09-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -67,7 +67,7 @@
 
   
   <url>
-    <loc>http://turboyan.github.io/tags/MPU9250%E5%BA%95%E5%B1%82/</loc>
+    <loc>https://www.turbofactory.xyz/tags/MPU9250%E5%BA%95%E5%B1%82/</loc>
     <lastmod>2020-09-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
