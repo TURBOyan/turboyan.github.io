@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.turbofactory.xyz/404.html</loc>
+    
+    <lastmod>2020-09-22</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.turbofactory.xyz/2020/09/20/MPU9250/</loc>
     
     <lastmod>2020-09-20</lastmod>
@@ -45,13 +52,6 @@
   
   <url>
     <loc>https://www.turbofactory.xyz/about/index.html</loc>
-    
-    <lastmod>2020-09-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.turbofactory.xyz/404.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
