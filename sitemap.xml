@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.turbofactory.xyz/friends/index.html</loc>
+    
+    <lastmod>2020-09-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.turbofactory.xyz/links/index.html</loc>
+    
+    <lastmod>2020-09-22</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.turbofactory.xyz/404.html</loc>
     
     <lastmod>2020-09-22</lastmod>
@@ -24,13 +38,6 @@
   
   <url>
     <loc>https://www.turbofactory.xyz/repository/index.html</loc>
-    
-    <lastmod>2020-09-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.turbofactory.xyz/links/index.html</loc>
     
     <lastmod>2020-09-12</lastmod>
     
