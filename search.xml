@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>【底层】MPU9250(电子指南针+六轴)通用底层（模拟IIC）</title>
-    <url>/2020/09/20/MPU9250/</url>
+    <url>/2020/07/25/MPU9250/</url>
     <content><![CDATA[<p><img src="http://pic.turbofactory.xyz/mpu9250_theme.jpg"></p>
 <a id="more"></a>
 
@@ -106,7 +106,10 @@
   <entry>
     <title>About Turbo</title>
     <url>/2020/07/20/About/</url>
-    <content><![CDATA[<p>​    </p>
+    <content><![CDATA[<img src="http://pic.turbofactory.xyz/head.png" alt="基于不要脸的丑照" style="zoom:25%;">
+
+<a id="more"></a>
+
 <h4 id="基本资料"><a href="#基本资料" class="headerlink" title="基本资料"></a>基本资料</h4><hr>
 <p>中文代号：匿名</p>
 <p>英文代号：TURBO</p>
@@ -141,9 +144,7 @@
 <p>基于ARM的多传感器融合智能循迹平衡车</p>
 <p>基于ARM和ROS的麦克纳姆轮全向移动机器人</p>
 <p>基于ARM的20KHz电磁信号基波幅值提取</p>
-<p>​    </p>
-<h3 id="基于不要脸的丑照"><a href="#基于不要脸的丑照" class="headerlink" title="基于不要脸的丑照"></a>基于不要脸的丑照</h3><hr>
-<img src="http://pic.turbofactory.xyz/head.png" style="zoom:20%;">]]></content>
+]]></content>
       <tags>
         <tag>关于我</tag>
       </tags>
