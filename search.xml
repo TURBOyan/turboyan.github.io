@@ -178,11 +178,11 @@
 <p>​    频率则是周期的倒数，即1/T。</p>
 <p>​    </p>
 <p><img src="http://pic.turbofactory.xyz/PWM/oscilloPWM.gif"></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">频率为1Hz的PWM信号施加在LED上，可以感受到肉眼可见的频闪</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">频率为1Hz的PWM信号施加在LED上</span><br><span class="line">可以感受到肉眼可见的频闪</span><br></pre></td></tr></table></figure>
 
 <p>​    </p>
 <p><img src="http://pic.turbofactory.xyz/PWM/oscilloPWM2.gif"></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">频率为50Hz的PWM信号在LED灯上的体现，人眼视觉暂留时间为20ms，因此50Hz的信号足以让人眼感受不到频闪。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">频率为50Hz的PWM信号在LED灯上的体现</span><br><span class="line">人眼视觉暂留时间为20ms</span><br><span class="line">因此50Hz的信号足以让人眼感受不到频闪。</span><br></pre></td></tr></table></figure>
 
 <p>​    </p>
 <p><strong>2、占空比</strong></p>
@@ -200,10 +200,10 @@
 <p>​    我在初学PWM的时候也有这样的困惑，也去网上查了很多资料，但是大部分都涉及到数学物理计算上，不仅难懂并且没有让人有看下去的欲望，时间长了也就放弃了搞懂他原理的冲动，有种食之无味弃之可惜的鸡肋感。</p>
 <p>​    后来偶然间，我看到了一种通俗易懂的解释方法，我也茅塞顿开，他的解释是，PWM的占空比越大，那么LED开启的<code>时间占比越大</code>，宏观上释放的<code>能量越高</code>，反之释放的<code>能量越低</code>，这样当<code>提高了频率</code>，让使用者<code>无法感受到开关量的变化</code>，就会使得LED的变亮或者变暗。</p>
 <p><img src="http://pic.turbofactory.xyz/PWM/light1.gif"></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">小米台灯上的调光按钮，他其实不是一个可调电阻，而是一个脉冲开关，同样是利用了单片机来处理脉冲数据而输出PWM，从而达到调光的效果</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">小米台灯上的调光按钮，他其实不是一个可调电阻</span><br><span class="line">而是一个脉冲开关</span><br><span class="line">同样是利用了单片机来处理脉冲数据而输出PWM</span><br><span class="line">从而达到调光的效果</span><br></pre></td></tr></table></figure>
 
 <p><img src="http://pic.turbofactory.xyz/PWM/light2.gif"></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">按下按钮并且旋转可以调节灯光的色温，他是通过调节暖白色和亮白色两种LED亮度的配比，来达到调节色温的目的，同样使用到了PWM的技术</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">按下按钮并且旋转可以调节灯光的色温</span><br><span class="line">他是通过调节暖白色和亮白色两种LED亮度的配比</span><br><span class="line">来达到调节色温的目的</span><br><span class="line">同样使用到了PWM的技术</span><br></pre></td></tr></table></figure>
 
 <p>​    </p>
 <hr>
