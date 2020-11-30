@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.turbofactory.xyz/2020/10/06/TCP_shake_hands/</loc>
+    <lastmod>2020-11-30</lastmod>
+  </url>
+  <url>
     <loc>https://www.turbofactory.xyz/2020/10/03/vscode_remote_ssh_tunnel/</loc>
     <lastmod>2020-11-28</lastmod>
   </url>

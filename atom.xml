@@ -6,7 +6,7 @@
   <link href="https://www.turbofactory.xyz/atom.xml" rel="self"/>
   
   <link href="https://www.turbofactory.xyz/"/>
-  <updated>2020-11-28T16:22:09.609Z</updated>
+  <updated>2020-11-30T07:41:25.640Z</updated>
   <id>https://www.turbofactory.xyz/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用谈恋爱的方式，TCP协议的三次握手手四次挥手手的超通俗理解。</title>
+    <link href="https://www.turbofactory.xyz/2020/10/06/TCP_shake_hands/"/>
+    <id>https://www.turbofactory.xyz/2020/10/06/TCP_shake_hands/</id>
+    <published>2020-10-06T05:15:03.000Z</published>
+    <updated>2020-11-30T07:41:25.640Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://pic.turbofactory.xyz/PicGoImg/20201130145938.jpg" alt></p><h1>一、TCP<strong>三次握手</strong></h1><p><font color="#00CF00" size="5">成功情况</font></p><blockquote><p>男：你吃饭了么？（<font color="#00CFC0" size="3">第一次握手手</font>）</p><p>女：我吃了，你呢？（<font color="#00CFC0" size="3">第二次握手手</font>）</p><p>男：我也吃了。（<font color="#00CFC0" size="3">第三次握手手</font>）</p><p><font color="#a0C0d0" size="3">沟通可以继续，约会开始。</font></p></blockquote><a id="more"></a><h3 id="font-color-f00000-size-5-失败情况举例1-font"><strong><font color="#F00000" size="5">失败情况举例1</font></strong></h3><blockquote><p>男：你吃饭了么？（<font color="#00CFC0" size="3">第一次握手手</font>）</p><p>女：我吃了。（第二次有应答但无报文）</p><p>男想：尼玛没了？直女无疑，离远点。</p><p><font color="#a0C0d0" size="3">男的觉得女的并不想说话，握手失败。</font></p></blockquote><h3 id="font-color-f00000-size-5-失败情况举例2-font"><strong><font color="#F00000" size="5">失败情况举例2</font></strong></h3><blockquote><p>男：你吃饭了么？（<font color="#00CFC0" size="3">第一次握手手</font>）</p><p>女：我吃了，你呢？（<font color="#00CFC0" size="3">第二次握手手</font>）</p><p>男：……（第三次无应答，握手失败）</p><p>女想：没了？？装高冷么，渣男只管撩</p><p><font color="#a0C0d0" size="3">沟通无法继续，握手失败</font></p></blockquote><p>​</p><p>​</p><hr><p>​</p><p>​</p><h1>二、TCP四次挥手</h1><h3 id="font-color-00cf00-size-5-成功情况-font"><font color="#00CF00" size="5">成功情况</font></h3><blockquote><p>男：我想分手了（<font color="#00CFC0" size="3">第一次挥手手</font>）</p><p>女：唉……我知道了（<font color="#00CFC0" size="3">第二次挥手手</font>）</p><p>女：呜呜呜呜呜呜……那等下我还有几句话要说（还有数据未发完），银行卡的密码是奥巴马身份证号后六位，我送你的那顶帽子是前前男友的。（数据传送结束）</p><p>​    好了我说完了。（<font color="#00CFC0" size="3">第三次挥手手</font>）</p><p>男：好的我知道了（<font color="#00CFC0" size="3">第四次握手手</font>），此时女的立即处于分手状态</p><p>此时男的还不知道女的是否真正明白自己意思，因此等待了一段时间，到时间后默认女的已经明白。此时男的处于分手状态。</p><p><font color="#a0C0d0" size="3">分手成功。</font></p></blockquote><h3 id="font-color-f00000-size-5-失败情况举例-font"><strong><font color="#F00000" size="5">失败情况举例</font></strong></h3><blockquote><p>男：我想分手了（<font color="#00CFC0" size="3">第一次挥手手</font>）</p><p>女：唉……我知道了（<font color="#00CFC0" size="3">第二次挥手手</font>）</p><p>女：呜呜呜呜呜呜……那等下我还有几句话要说（还有数据未发完），我们还没一起去新建玩，我们还没一起看过电影。（数据传送结束）</p><p>​    好了我说完了。（<font color="#00CFC0" size="3">第三次挥手手</font>）</p><p>男：……</p><p>女：你怎么不说话？</p><p>男……</p><p>女：你是不是不想分手？</p><p>男：……</p><p>女：嗯？</p><p>男：我记得咱家好像衣服还没晒，我去把他晒了，晚上我们去看电影吧？（第三次挥手失败）</p><p><font color="#a0C0d0" size="3">由于男的转移话题，第三次挥手失败，分手失败</font></p></blockquote>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;http://pic.turbofactory.xyz/PicGoImg/20201130145938.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h1&gt;一、TCP&lt;strong&gt;三次握手&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;font color=&quot;#00CF00&quot; size=&quot;5&quot;&gt;成功情况&lt;/font&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;男：你吃饭了么？（&lt;font color=&quot;#00CFC0&quot; size=&quot;3&quot;&gt;第一次握手手&lt;/font&gt;）&lt;/p&gt;
+&lt;p&gt;女：我吃了，你呢？（&lt;font color=&quot;#00CFC0&quot; size=&quot;3&quot;&gt;第二次握手手&lt;/font&gt;）&lt;/p&gt;
+&lt;p&gt;男：我也吃了。（&lt;font color=&quot;#00CFC0&quot; size=&quot;3&quot;&gt;第三次握手手&lt;/font&gt;）&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;#a0C0d0&quot; size=&quot;3&quot;&gt;沟通可以继续，约会开始。&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="教程" scheme="https://www.turbofactory.xyz/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="socket" scheme="https://www.turbofactory.xyz/tags/socket/"/>
+    
+  </entry>
   
   <entry>
     <title>使用vscode remote ssh功能远程连接服务器或树莓派时，报错Setting up SSH tunnel的终极解决办法！！全网仅此一份</title>
