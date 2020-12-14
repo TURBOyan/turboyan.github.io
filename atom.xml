@@ -6,7 +6,7 @@
   <link href="https://www.turbofactory.xyz/atom.xml" rel="self"/>
   
   <link href="https://www.turbofactory.xyz/"/>
-  <updated>2020-11-30T08:12:44.689Z</updated>
+  <updated>2020-12-14T04:28:32.747Z</updated>
   <id>https://www.turbofactory.xyz/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>三句话为ubuntu20.04快速配置xrdp远程连接-基于gnome</title>
+    <link href="https://www.turbofactory.xyz/2020/11/02/xrdp_tutorial/"/>
+    <id>https://www.turbofactory.xyz/2020/11/02/xrdp_tutorial/</id>
+    <published>2020-11-02T05:15:03.000Z</published>
+    <updated>2020-12-14T04:28:32.747Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://pic.turbofactory.xyz/PicGoImg/20201213164509.png" alt="image-20201213164456399"></p><blockquote><p>系统环境：ubuntu 20.04</p><p>桌面环境：Gnome</p><p>远程桌面工具：windows（自带远程桌面），xrdp（Linux）</p></blockquote><a id="more"></a><p>之前尝试了xfce4，xubuntu-desktop，都无一例外的好丑好丑，且语言环境还得重新配置</p><p>他们都不太兼容xrdp，效果不是很好</p><p>今天无意间看发现Gnome对xrdp适配效果不错，安装只需要简单的一个xrdp就可以，无需繁琐的配置文件</p><p>安装命令如下：</p><p>1、首先更新源</p><blockquote><p>sudo apt update</p></blockquote><p>2、安装xrdp</p><blockquote><p>sudo apt install xrdp</p></blockquote><p>3、由于xrdp使用的key仅仅只对ssl-cert用户组可读，需要将xrdp用户添加进ssl-cert用户组，如果不添加，可能导致黑屏</p><blockquote><p>sudo adduser xrdp ssl-cert</p></blockquote><p>4、最后重启xrdp应用更改，就可以使用远程桌面了</p><blockquote><p>sudo systemctl xrdp restart</p></blockquote><p>效果如下</p><p><img src="http://pic.turbofactory.xyz/PicGoImg/20201213170411.png" alt="image-20201213170411183"></p><p><img src="http://pic.turbofactory.xyz/PicGoImg/20201213170346.png" alt="image-20201213170345648"></p><h1>微信公众号：特博工坊</h1><h1>个人博客：<a href="http://www.turbofactory.xyz/">www.turbofactory.xyz</a></h1><h1>有空我会发非常有意思的融合机械，电子，linux等等的电子diy及配套教程。</h1><h1>欢迎关注</h1>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;http://pic.turbofactory.xyz/PicGoImg/20201213164509.png&quot; alt=&quot;image-20201213164456399&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;系统环境：ubuntu 20.04&lt;/p&gt;
+&lt;p&gt;桌面环境：Gnome&lt;/p&gt;
+&lt;p&gt;远程桌面工具：windows（自带远程桌面），xrdp（Linux）&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="教程" scheme="https://www.turbofactory.xyz/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="ubuntu" scheme="https://www.turbofactory.xyz/tags/ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>用谈恋爱的方式，TCP协议的三次握手手四次挥手手的超通俗理解。</title>
@@ -42,32 +68,6 @@
     
     
     <category term="socket" scheme="https://www.turbofactory.xyz/tags/socket/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>三句话为ubuntu20.04快速配置xrdp远程连接-基于gnome</title>
-    <link href="https://www.turbofactory.xyz/2020/10/06/xrdp_tutorial/"/>
-    <id>https://www.turbofactory.xyz/2020/10/06/xrdp_tutorial/</id>
-    <published>2020-10-06T05:15:03.000Z</published>
-    <updated>2020-12-13T09:05:44.415Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://pic.turbofactory.xyz/PicGoImg/20201213164509.png" alt="image-20201213164456399"></p><blockquote><p>系统环境：ubuntu 20.04</p><p>桌面环境：Gnome</p><p>远程桌面工具：windows（自带远程桌面），xrdp（Linux）</p></blockquote><a id="more"></a><p>之前尝试了xfce4，xubuntu-desktop，都无一例外的好丑好丑，且语言环境还得重新配置</p><p>他们都不太兼容xrdp，效果不是很好</p><p>今天无意间看发现Gnome对xrdp适配效果不错，安装只需要简单的一个xrdp就可以，无需繁琐的配置文件</p><p>安装命令如下：</p><p>1、首先更新源</p><blockquote><p>sudo apt update</p></blockquote><p>2、安装xrdp</p><blockquote><p>sudo apt install xrdp</p></blockquote><p>3、由于xrdp使用的key仅仅只对ssl-cert用户组可读，需要将xrdp用户添加进ssl-cert用户组，如果不添加，可能导致黑屏</p><blockquote><p>sudo adduser xrdp ssl-cert</p></blockquote><p>4、最后重启xrdp应用更改，就可以使用远程桌面了</p><blockquote><p>sudo systemctl xrdp restart</p></blockquote><p>效果如下</p><p><img src="http://pic.turbofactory.xyz/PicGoImg/20201213170411.png" alt="image-20201213170411183"></p><p><img src="http://pic.turbofactory.xyz/PicGoImg/20201213170346.png" alt="image-20201213170345648"></p><h1>微信公众号：特博工坊</h1><h1>个人博客：<a href="http://www.turbofactory.xyz/">www.turbofactory.xyz</a></h1><h1>有空我会发非常有意思的融合机械，电子，linux等等的电子diy及配套教程。</h1><h1>欢迎关注</h1>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;http://pic.turbofactory.xyz/PicGoImg/20201213164509.png&quot; alt=&quot;image-20201213164456399&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;系统环境：ubuntu 20.04&lt;/p&gt;
-&lt;p&gt;桌面环境：Gnome&lt;/p&gt;
-&lt;p&gt;远程桌面工具：windows（自带远程桌面），xrdp（Linux）&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="教程" scheme="https://www.turbofactory.xyz/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="ubuntu" scheme="https://www.turbofactory.xyz/tags/ubuntu/"/>
     
   </entry>
   
