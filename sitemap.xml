@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.turbofactory.xyz/2020/10/06/xrdp_tutorial/</loc>
+    
+    <lastmod>2020-12-13</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.turbofactory.xyz/2020/08/15/moon_light_1/</loc>
     
     <lastmod>2020-12-02</lastmod>
@@ -123,7 +130,7 @@
 
   <url>
     <loc>https://www.turbofactory.xyz/</loc>
-    <lastmod>2020-12-02</lastmod>
+    <lastmod>2020-12-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -131,49 +138,56 @@
   
   <url>
     <loc>https://www.turbofactory.xyz/tags/MPU9250%E5%BA%95%E5%B1%82/</loc>
-    <lastmod>2020-12-02</lastmod>
+    <lastmod>2020-12-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.turbofactory.xyz/tags/%E6%9C%88%E7%90%83%E7%81%AF/</loc>
-    <lastmod>2020-12-02</lastmod>
+    <lastmod>2020-12-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.turbofactory.xyz/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/</loc>
-    <lastmod>2020-12-02</lastmod>
+    <lastmod>2020-12-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.turbofactory.xyz/tags/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/</loc>
-    <lastmod>2020-12-02</lastmod>
+    <lastmod>2020-12-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.turbofactory.xyz/tags/git/</loc>
-    <lastmod>2020-12-02</lastmod>
+    <lastmod>2020-12-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.turbofactory.xyz/tags/vscode/</loc>
-    <lastmod>2020-12-02</lastmod>
+    <lastmod>2020-12-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.turbofactory.xyz/tags/socket/</loc>
-    <lastmod>2020-12-02</lastmod>
+    <lastmod>2020-12-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.turbofactory.xyz/tags/ubuntu/</loc>
+    <lastmod>2020-12-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -182,28 +196,28 @@
   
   <url>
     <loc>https://www.turbofactory.xyz/categories/%E4%BB%A3%E7%A0%81/</loc>
-    <lastmod>2020-12-02</lastmod>
+    <lastmod>2020-12-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.turbofactory.xyz/categories/%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2020-12-02</lastmod>
+    <lastmod>2020-12-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.turbofactory.xyz/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2020-12-02</lastmod>
+    <lastmod>2020-12-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.turbofactory.xyz/categories/%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2020-12-02</lastmod>
+    <lastmod>2020-12-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
