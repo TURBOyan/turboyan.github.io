@@ -3,11 +3,11 @@
   <title>特别白的盐</title>
   <icon>https://www.gravatar.com/avatar/5ab903e9dbc00e59c7431e893c3f9eff</icon>
   <subtitle>Turboyan</subtitle>
-  <link href="https://www.turboyan.com/atom.xml" rel="self"/>
+  <link href="https://blog.turboyan.com/atom.xml" rel="self"/>
   
-  <link href="https://www.turboyan.com/"/>
+  <link href="https://blog.turboyan.com/"/>
   <updated>2022-05-18T17:56:50.137Z</updated>
-  <id>https://www.turboyan.com/</id>
+  <id>https://blog.turboyan.com/</id>
   
   <author>
     <name>TURBO Yan</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>一种通俗易懂的PWM的解释</title>
-    <link href="https://www.turboyan.com/2020/08/26/PWM/"/>
-    <id>https://www.turboyan.com/2020/08/26/PWM/</id>
+    <link href="https://blog.turboyan.com/2020/08/26/PWM/"/>
+    <id>https://blog.turboyan.com/2020/08/26/PWM/</id>
     <published>2020-08-26T08:35:10.000Z</published>
     <updated>2022-05-18T17:56:50.137Z</updated>
     
@@ -30,19 +30,19 @@
     
     
     
-    <category term="教程" scheme="https://www.turboyan.com/categories/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://blog.turboyan.com/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="月球灯" scheme="https://www.turboyan.com/tags/%E6%9C%88%E7%90%83%E7%81%AF/"/>
+    <category term="月球灯" scheme="https://blog.turboyan.com/tags/%E6%9C%88%E7%90%83%E7%81%AF/"/>
     
-    <category term="小知识" scheme="https://www.turboyan.com/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    <category term="小知识" scheme="https://blog.turboyan.com/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
   <entry>
     <title>【底层】MPU9250(电子指南针+六轴)通用底层（模拟IIC）</title>
-    <link href="https://www.turboyan.com/2020/07/03/MPU9250/"/>
-    <id>https://www.turboyan.com/2020/07/03/MPU9250/</id>
+    <link href="https://blog.turboyan.com/2020/07/03/MPU9250/"/>
+    <id>https://blog.turboyan.com/2020/07/03/MPU9250/</id>
     <published>2020-07-03T05:15:03.000Z</published>
     <updated>2022-05-18T17:56:50.137Z</updated>
     
@@ -53,10 +53,10 @@
     
     
     
-    <category term="代码" scheme="https://www.turboyan.com/categories/%E4%BB%A3%E7%A0%81/"/>
+    <category term="代码" scheme="https://blog.turboyan.com/categories/%E4%BB%A3%E7%A0%81/"/>
     
     
-    <category term="MPU9250底层" scheme="https://www.turboyan.com/tags/MPU9250%E5%BA%95%E5%B1%82/"/>
+    <category term="MPU9250底层" scheme="https://blog.turboyan.com/tags/MPU9250%E5%BA%95%E5%B1%82/"/>
     
   </entry>
   
