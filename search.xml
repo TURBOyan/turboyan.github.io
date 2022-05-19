@@ -1,10 +1,174 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>三句话为ubuntu20.04快速配置xrdp远程连接-基于gnome</title>
+    <url>/2020/11/02/xrdp_tutorial/</url>
+    <content><![CDATA[<p><img src="https://pic.turboyan.com/PicGoImg/20201213164509.png" alt="image-20201213164456399"></p>
+<blockquote>
+<p>系统环境：ubuntu 20.04</p>
+<p>桌面环境：Gnome</p>
+<p>远程桌面工具：windows（自带远程桌面），xrdp（Linux）</p>
+</blockquote>
+<span id="more"></span>
+<p>之前尝试了xfce4，xubuntu-desktop，都无一例外的好丑好丑，且语言环境还得重新配置</p>
+<p>他们都不太兼容xrdp，效果不是很好</p>
+<p>今天无意间看发现Gnome对xrdp适配效果不错，安装只需要简单的一个xrdp就可以，无需繁琐的配置文件</p>
+<p>安装命令如下：</p>
+<p>1、首先更新源</p>
+<blockquote>
+<p>sudo apt update</p>
+</blockquote>
+<p>2、安装xrdp</p>
+<blockquote>
+<p>sudo apt install xrdp</p>
+</blockquote>
+<p>3、由于xrdp使用的key仅仅只对ssl-cert用户组可读，需要将xrdp用户添加进ssl-cert用户组，如果不添加，可能导致黑屏</p>
+<blockquote>
+<p>sudo adduser xrdp ssl-cert</p>
+</blockquote>
+<p>4、最后重启xrdp应用更改，就可以使用远程桌面了</p>
+<blockquote>
+<p>sudo systemctl xrdp restart</p>
+</blockquote>
+<p>效果如下</p>
+<p><img src="https://pic.turboyan.com/PicGoImg/20201213170411.png" alt="image-20201213170411183"></p>
+<p><img src="https://pic.turboyan.com/PicGoImg/20201213170346.png" alt="image-20201213170345648"></p>
+<h1>P.S.</h1>
+<p>个人主页：<a href="https://www.turboyan.com">https://www.turboyan.com</a></p>
+<p>GitHub：<a href="https://github.com/TURBOyan">https://github.com/TURBOyan</a></p>
+<p>Email：turboisyan@foxmail.com</p>
+<p>公众号：特别白的盐</p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用vscode remote ssh功能远程连接服务器或树莓派时，报错Setting up SSH tunnel的解决办法！</title>
+    <url>/2020/10/03/vscode_remote_ssh_tunnel/</url>
+    <content><![CDATA[<p>当你想用vscode remote ssh 功能远程开发linux服务器、树莓派时，.vscode-server文件创建完成，但是一直显示卡在</p>
+<blockquote>
+<p>Setting up SSH Host &lt;你的用户名&gt;：Setting up SSH tunnel</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20201128224959109.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzc1OTcz,size_16,color_FFFFFF,t_70" alt="img"></p>
+<span id="more"></span>
+<p>此时只需按住ctrl+shift+p,输入remote-ssh:settings,点击进入</p>
+<p><img src="https://img-blog.csdnimg.cn/20201128225413526.png" alt="img"></p>
+<p>找到</p>
+<blockquote>
+<p>Remote.SSH:Enable Dynamic Forwarding</p>
+</blockquote>
+<p>选项</p>
+<p>将他的勾去掉</p>
+<p><img src="https://img-blog.csdnimg.cn/20201128225513860.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzc1OTcz,size_16,color_FFFFFF,t_70" alt="img"></p>
+<p>此时再重新连接远程linux，即可成功连接</p>
+<p><img src="https://img-blog.csdnimg.cn/20201128225841282.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzc1OTcz,size_16,color_FFFFFF,t_70" alt="img"></p>
+<h1>原因分析</h1>
+<blockquote>
+<p>Setting up SSH tunnel</p>
+</blockquote>
+<p>这句话的意思是正在设置SSH隧道</p>
+<p>而Remote-ssh:settings内的选项</p>
+<blockquote>
+<p>Whether to use SSH dynamic forwarding to allow setting up new port tunnels over an existing SSH connecting. When this is used, a password only needs to be entered once for each window.</p>
+</blockquote>
+<p>这句话的意思是：是否使用SSH动态转发以允许在现有SSH连接上设置新的端口隧道。使用此选项时，每个窗口只需输入一次密码。</p>
+<p>我之前没有了解过SSH隧道，猜测大概的原因是我使能了这个选项，当remote ssh配置成功时，vscode一直在等待SSH隧道的建立，而远端linux方面我并没有开启ssh tunnel的使能，所以才造成了一直未响应。</p>
+<p>在此先挖个坑，待以后学习深入再进一步了解SSH tunnel，再来详细解释。</p>
+<h1>P.S.</h1>
+<p>个人主页：<a href="https://www.turboyan.com">https://www.turboyan.com</a></p>
+<p>GitHub：<a href="https://github.com/TURBOyan">https://github.com/TURBOyan</a></p>
+<p>Email：turboisyan@foxmail.com</p>
+<p>公众号：特别白的盐</p>
+]]></content>
+      <categories>
+        <category>问题</category>
+      </categories>
+      <tags>
+        <tag>vscode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一种通俗易懂的PWM的解释</title>
+    <url>/2020/08/26/PWM/</url>
+    <content><![CDATA[<p><img src="https://pic.turboyan.com/PicGoImg/MI_light" alt=""></p>
+<span id="more"></span>
+<p>​</p>
+<p><img src="https://pic.turboyan.com/PWM/RGB.gif" alt=""></p>
+<p>​	上图所示的是电脑显示屏的微观图像，拍摄的方法非常有意思，通过在手机摄像头上滴一滴水滴，形成凸透镜，就能做成一个简易版的显微镜。</p>
+<p>​</p>
+<p><img src="https://pic.turboyan.com/PWM/camerawithwater.jpg" alt=""></p>
+<p>​	从显微录像中也可以很明显的看到显示屏的一个个像素组成，我的ThinkPad显示屏共有1366列768排、近100万像素点，而每一个像素点，都由<code>红、绿、蓝</code>三种颜色组成。由RGB色彩的知识可以知道，通过对红绿蓝不同深度的<code>配比</code>，能调出世界上<code>所有的颜色</code>。</p>
+<p>​	这样一来，本来高级、难学的彩屏显示，就变得非常简单，我们只需要计算好每个像素的红绿蓝颜色深度，且主控芯片的频率足够高，让显示屏能在<code>20ms</code>(人眼的视觉暂留时间)内刷新完整一面图像，即可让显示屏连续的显示视频。</p>
+<p><img src="https://pic.turboyan.com/PWM/RGBMIX.gif" alt=""></p>
+<p>​	那么就有一个问题，就是如何让只能输出1和0两种数字状态的逻辑芯片，来控制RGB三色深度这连续的模拟量？</p>
+<p>​</p>
+<h4 id="模拟量控制的两种办法"><strong>模拟量控制的两种办法</strong></h4>
+<p>**1、**经过数字信号到模拟信号的转化，让只有两种状态的开关信号，转换到连续信号。</p>
+<p>这种办法可行，但是由于转换时间的限制，难以提高屏幕的刷新频率，并且每一个像素点都需要单独的数模转换模块，这样在硬件上的工程量会非常非常庞大，我们总不想自己的手机屏幕后边背着一个巨大的主机箱吧？因此这种方法在驱动显示屏上是完全不可行的。</p>
+<p>**2、**再者，便是使用一种由A.H.里夫在20世纪30年代发明的<code>脉宽调制技术</code>（Pulse width modulation），简称PWM</p>
+<p>​</p>
+<hr>
+<p>​</p>
+<h4 id="pwm技术的优点"><strong>PWM技术的优点</strong></h4>
+<p>**1、**PWM从处理器到被控系统信号都是数字形式的，无需进行数模转换。</p>
+<p>**2、**让信号保持为数字形式可将噪声影响降到最小。噪声只有在强到足以将逻辑1改变为逻辑0或将逻辑0改变为逻辑1时，才能对数字信号产生影响。</p>
+<p>因此，因为他实现比较容易，且有极强的抗干扰能力，PWM被广泛应用于功率调节，通信等领域。而上文所说的显示屏像素的RGB配比，正是PWM在功率调节上的一个典型应用。</p>
+<p><img src="https://pic.turboyan.com/PWM/pwmduty.jpg" alt=""></p>
+<p>​</p>
+<h4 id="pwm的两个概念："><strong>PWM的两个概念：</strong></h4>
+<p><strong>1、周期/频率</strong></p>
+<p>​	周期是指一个PWM信号一个上升沿 ↑ 执行至下一个上升沿所需要的时间，一般用字母T表示。</p>
+<p>​    频率则是周期的倒数，即1/T。</p>
+<p>​</p>
+<p><img src="https://pic.turboyan.com/PWM/oscilloPWM.gif" alt=""></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">频率为1Hz的PWM信号施加在LED上</span><br><span class="line">可以感受到肉眼可见的频闪</span><br></pre></td></tr></table></figure>
+<p>​</p>
+<p><img src="https://pic.turboyan.com/PWM/oscilloPWM2.gif" alt=""></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">频率为50Hz的PWM信号在LED灯上的体现</span><br><span class="line">人眼视觉暂留时间为20ms</span><br><span class="line">因此50Hz的信号足以让人眼感受不到频闪。</span><br></pre></td></tr></table></figure>
+<p>​</p>
+<p><strong>2、占空比</strong></p>
+<p>​	一个PWM信号内其中一个周期，高电平时间所占整个周期的百分比，即一个5V的直流信号相当于占空比为100%的PWM信号，一个0V的直流信号相当于占空比为0%的直流信号。</p>
+<p>​</p>
+<p><img src="https://pic.turboyan.com/PWM/oscilloPWM3.gif" alt=""></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">将PWM的占空比由0%慢慢提高到100%时LED亮度的变化</span><br></pre></td></tr></table></figure>
+<p>​</p>
+<hr>
+<p>​</p>
+<p>​	很多刚接触PWM的人往往不太能理解为什么被施加了不同占空比PWM的LED，会直接体现在LED的亮度变化上，简单来说就是</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">为什么PWM能控制LED亮度、电机的转速？</span><br></pre></td></tr></table></figure>
+<p>​	我在初学PWM的时候也有这样的困惑，也去网上查了很多资料，但是大部分都涉及到数学物理计算上，不仅难懂并且没有让人有看下去的欲望，时间长了也就放弃了搞懂他原理的冲动，有种食之无味弃之可惜的鸡肋感。</p>
+<p>​	后来偶然间，我看到了一种通俗易懂的解释方法，我也茅塞顿开，他的解释是，PWM的占空比越大，那么LED开启的<code>时间占比越大</code>，宏观上释放的<code>能量越高</code>，反之释放的<code>能量越低</code>，这样当<code>提高了频率</code>，让使用者<code>无法感受到开关量的变化</code>，就会使得LED的变亮或者变暗。</p>
+<p><img src="https://pic.turboyan.com/PWM/light1.gif" alt=""></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">小米台灯上的调光按钮，他其实不是一个可调电阻</span><br><span class="line">而是一个脉冲开关</span><br><span class="line">同样是利用了单片机来处理脉冲数据而输出PWM</span><br><span class="line">从而达到调光的效果</span><br></pre></td></tr></table></figure>
+<p><img src="https://pic.turboyan.com/PWM/light2.gif" alt=""></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">按下按钮并且旋转可以调节灯光的色温</span><br><span class="line">他是通过调节暖白色和亮白色两种LED亮度的配比</span><br><span class="line">来达到调节色温的目的</span><br><span class="line">同样使用到了PWM的技术</span><br></pre></td></tr></table></figure>
+<p>​</p>
+<hr>
+<p>​</p>
+<p>​	<strong>这种说法似乎是有些偷换概念，和真正意义上的调光调速似乎不太一样，但是从能量上来讲，的确可以说通所有的现象。</strong></p>
+<h1>P.S.</h1>
+<p>个人主页：<a href="https://www.turboyan.com">https://www.turboyan.com</a></p>
+<p>GitHub：<a href="https://github.com/TURBOyan">https://github.com/TURBOyan</a></p>
+<p>Email：turboisyan@foxmail.com</p>
+<p>公众号：特别白的盐</p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>月球灯</tag>
+        <tag>小知识</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【底层】MPU9250(电子指南针+六轴)通用底层（模拟IIC）</title>
     <url>/2020/07/03/MPU9250/</url>
     <content><![CDATA[<p><img src="https://pic.turboyan.com/mpu9250_theme.jpg" alt=""></p>
-<a id="more"></a>
+<span id="more"></span>
 <table>
 <thead>
 <tr>
@@ -52,14 +216,14 @@
 <h1><strong>代码下载</strong></h1>
 <p><strong>一、GitHub方式（推荐，便于后续更新和代码管理）</strong></p>
 <p>可移植底层链接👇</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;github.com&#x2F;TURBOyan&#x2F;MPU9250.git                                        </span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://github.com/TURBOyan/MPU9250.git                                        </span><br></pre></td></tr></table></figure>
 <p>例程链接👇</p>
 <p>例程内已有的移植好的单片机有：1、LPC54606</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;github.com&#x2F;TURBOyan&#x2F;MPU9250-Example.git                                   </span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://github.com/TURBOyan/MPU9250-Example.git                                   </span><br></pre></td></tr></table></figure>
 <p>点击查看Github下载教程👇</p>
 <p><a href="http://mp.weixin.qq.com/s?__biz=MzI4MTU3MTYxMw==&amp;mid=2247483797&amp;idx=1&amp;sn=317e9fa6dde9a6eacd8b2f82b0ed1e30&amp;chksm=eba679e7dcd1f0f186cac2ddb5e965624de68eeb7918670c35a884eac9946e23fa36518ee81a&amp;scene=21#wechat_redirect"><strong>使用GitHub来团队协作和管理你的代码</strong></a></p>
 <p><strong>二、百度网盘下载</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">链接：https:&#x2F;&#x2F;pan.baidu.com&#x2F;s&#x2F;1sq9QN1b6RG6lJ_c780nBYQ</span><br><span class="line">提取码：oly7</span><br><span class="line">复制这段内容后打开百度网盘手机App，操作更方便哦</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">链接：https://pan.baidu.com/s/1sq9QN1b6RG6lJ_c780nBYQ</span><br><span class="line">提取码：oly7</span><br><span class="line">复制这段内容后打开百度网盘手机App，操作更方便哦</span><br></pre></td></tr></table></figure>
 <h1><strong>代码移植</strong></h1>
 <p><strong>一、克隆代码</strong></p>
 <p>这里我拿LPC546XX例程举例</p>
@@ -91,85 +255,17 @@
 <p>其他具体用法详见MPU_ForUser和MPU9250_Config内说明</p>
 <p><strong>备注：单片机和模块连接除了IIC的SCL、SDA引脚以外，还需连一根线从模块的INT到单片机的外部中断引脚，用作数据准备好的信号，中断触发的周期将由MPU9250_Config.h文件内的DEFAULT_MPU_HZ决定，也就是MPL的刷新频率，一般最高200Hz，这里默认是100hz</strong></p>
 <p><img src="https://pic.turboyan.com/mpu9250_use.jpg" alt=""></p>
-]]></content>
-      <categories>
-        <category>代码</category>
-      </categories>
-      <tags>
-        <tag>MPU9250底层</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一种通俗易懂的PWM的解释</title>
-    <url>/2020/08/26/PWM/</url>
-    <content><![CDATA[<p><img src="https://pic.turboyan.com/PicGoImg/MI_light" alt=""></p>
-<a id="more"></a>
-<p>​</p>
-<p><img src="https://pic.turboyan.com/PWM/RGB.gif" alt=""></p>
-<p>​	上图所示的是电脑显示屏的微观图像，拍摄的方法非常有意思，通过在手机摄像头上滴一滴水滴，形成凸透镜，就能做成一个简易版的显微镜。</p>
-<p>​</p>
-<p><img src="https://pic.turboyan.com/PWM/camerawithwater.jpg" alt=""></p>
-<p>​	从显微录像中也可以很明显的看到显示屏的一个个像素组成，我的ThinkPad显示屏共有1366列768排、近100万像素点，而每一个像素点，都由<code>红、绿、蓝</code>三种颜色组成。由RGB色彩的知识可以知道，通过对红绿蓝不同深度的<code>配比</code>，能调出世界上<code>所有的颜色</code>。</p>
-<p>​	这样一来，本来高级、难学的彩屏显示，就变得非常简单，我们只需要计算好每个像素的红绿蓝颜色深度，且主控芯片的频率足够高，让显示屏能在<code>20ms</code>(人眼的视觉暂留时间)内刷新完整一面图像，即可让显示屏连续的显示视频。</p>
-<p><img src="https://pic.turboyan.com/PWM/RGBMIX.gif" alt=""></p>
-<p>​	那么就有一个问题，就是如何让只能输出1和0两种数字状态的逻辑芯片，来控制RGB三色深度这连续的模拟量？</p>
-<p>​</p>
-<h4 id="模拟量控制的两种办法"><strong>模拟量控制的两种办法</strong></h4>
-<p>**1、**经过数字信号到模拟信号的转化，让只有两种状态的开关信号，转换到连续信号。</p>
-<p>这种办法可行，但是由于转换时间的限制，难以提高屏幕的刷新频率，并且每一个像素点都需要单独的数模转换模块，这样在硬件上的工程量会非常非常庞大，我们总不想自己的手机屏幕后边背着一个巨大的主机箱吧？因此这种方法在驱动显示屏上是完全不可行的。</p>
-<p>**2、**再者，便是使用一种由A.H.里夫在20世纪30年代发明的<code>脉宽调制技术</code>（Pulse width modulation），简称PWM</p>
-<p>​</p>
-<hr>
-<p>​</p>
-<h4 id="pwm技术的优点"><strong>PWM技术的优点</strong></h4>
-<p>**1、**PWM从处理器到被控系统信号都是数字形式的，无需进行数模转换。</p>
-<p>**2、**让信号保持为数字形式可将噪声影响降到最小。噪声只有在强到足以将逻辑1改变为逻辑0或将逻辑0改变为逻辑1时，才能对数字信号产生影响。</p>
-<p>因此，因为他实现比较容易，且有极强的抗干扰能力，PWM被广泛应用于功率调节，通信等领域。而上文所说的显示屏像素的RGB配比，正是PWM在功率调节上的一个典型应用。</p>
-<p><img src="https://pic.turboyan.com/PWM/pwmduty.jpg" alt=""></p>
-<p>​</p>
-<h4 id="pwm的两个概念："><strong>PWM的两个概念：</strong></h4>
-<p><strong>1、周期/频率</strong></p>
-<p>​	周期是指一个PWM信号一个上升沿 ↑ 执行至下一个上升沿所需要的时间，一般用字母T表示。</p>
-<p>​    频率则是周期的倒数，即1/T。</p>
-<p>​</p>
-<p><img src="https://pic.turboyan.com/PWM/oscilloPWM.gif" alt=""></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">频率为1Hz的PWM信号施加在LED上</span><br><span class="line">可以感受到肉眼可见的频闪</span><br></pre></td></tr></table></figure>
-<p>​</p>
-<p><img src="https://pic.turboyan.com/PWM/oscilloPWM2.gif" alt=""></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">频率为50Hz的PWM信号在LED灯上的体现</span><br><span class="line">人眼视觉暂留时间为20ms</span><br><span class="line">因此50Hz的信号足以让人眼感受不到频闪。</span><br></pre></td></tr></table></figure>
-<p>​</p>
-<p><strong>2、占空比</strong></p>
-<p>​	一个PWM信号内其中一个周期，高电平时间所占整个周期的百分比，即一个5V的直流信号相当于占空比为100%的PWM信号，一个0V的直流信号相当于占空比为0%的直流信号。</p>
-<p>​</p>
-<p><img src="https://pic.turboyan.com/PWM/oscilloPWM3.gif" alt=""></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">将PWM的占空比由0%慢慢提高到100%时LED亮度的变化</span><br></pre></td></tr></table></figure>
-<p>​</p>
-<hr>
-<p>​</p>
-<p>​	很多刚接触PWM的人往往不太能理解为什么被施加了不同占空比PWM的LED，会直接体现在LED的亮度变化上，简单来说就是</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">为什么PWM能控制LED亮度、电机的转速？</span><br></pre></td></tr></table></figure>
-<p>​	我在初学PWM的时候也有这样的困惑，也去网上查了很多资料，但是大部分都涉及到数学物理计算上，不仅难懂并且没有让人有看下去的欲望，时间长了也就放弃了搞懂他原理的冲动，有种食之无味弃之可惜的鸡肋感。</p>
-<p>​	后来偶然间，我看到了一种通俗易懂的解释方法，我也茅塞顿开，他的解释是，PWM的占空比越大，那么LED开启的<code>时间占比越大</code>，宏观上释放的<code>能量越高</code>，反之释放的<code>能量越低</code>，这样当<code>提高了频率</code>，让使用者<code>无法感受到开关量的变化</code>，就会使得LED的变亮或者变暗。</p>
-<p><img src="https://pic.turboyan.com/PWM/light1.gif" alt=""></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">小米台灯上的调光按钮，他其实不是一个可调电阻</span><br><span class="line">而是一个脉冲开关</span><br><span class="line">同样是利用了单片机来处理脉冲数据而输出PWM</span><br><span class="line">从而达到调光的效果</span><br></pre></td></tr></table></figure>
-<p><img src="https://pic.turboyan.com/PWM/light2.gif" alt=""></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">按下按钮并且旋转可以调节灯光的色温</span><br><span class="line">他是通过调节暖白色和亮白色两种LED亮度的配比</span><br><span class="line">来达到调节色温的目的</span><br><span class="line">同样使用到了PWM的技术</span><br></pre></td></tr></table></figure>
-<p>​</p>
-<hr>
-<p>​</p>
-<p>​	<strong>这种说法似乎是有些偷换概念，和真正意义上的调光调速似乎不太一样，但是从能量上来讲，的确可以说通所有的现象。</strong></p>
-<p>TURBOyan</p>
+<h1>P.S.</h1>
 <p>个人主页：<a href="https://www.turboyan.com">https://www.turboyan.com</a></p>
 <p>GitHub：<a href="https://github.com/TURBOyan">https://github.com/TURBOyan</a></p>
 <p>Email：turboisyan@foxmail.com</p>
 <p>公众号：特别白的盐</p>
 ]]></content>
       <categories>
-        <category>教程</category>
+        <category>代码</category>
       </categories>
       <tags>
-        <tag>月球灯</tag>
-        <tag>小知识</tag>
+        <tag>MPU9250底层</tag>
       </tags>
   </entry>
 </search>

@@ -2,17 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.turboyan.com/2020/10/03/vscode_remote_ssh_tunnel/</loc>
+    
+    <lastmod>2022-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.turboyan.com/2020/11/02/xrdp_tutorial/</loc>
+    
+    <lastmod>2022-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.turboyan.com/2020/07/03/MPU9250/</loc>
     
-    <lastmod>2022-05-18</lastmod>
+    <lastmod>2022-05-19</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.turboyan.com/2020/08/26/PWM/</loc>
     
-    <lastmod>2022-05-18</lastmod>
+    <lastmod>2022-05-19</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.turboyan.com/tags/index.html</loc>
+    
+    <lastmod>2022-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.turboyan.com/friends/index.html</loc>
+    
+    <lastmod>2022-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.turboyan.com/links/index.html</loc>
+    
+    <lastmod>2022-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.turboyan.com/repository/index.html</loc>
+    
+    <lastmod>2022-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.turboyan.com/categories/index.html</loc>
+    
+    <lastmod>2022-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.turboyan.com/books/index.html</loc>
+    
+    <lastmod>2022-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.turboyan.com/404.html</loc>
+    
+    <lastmod>2022-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -20,55 +105,8 @@
     
     <lastmod>2022-05-18</lastmod>
     
-  </url>
-  
-  <url>
-    <loc>https://blog.turboyan.com/repository/index.html</loc>
-    
-    <lastmod>2022-05-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.turboyan.com/tags/index.html</loc>
-    
-    <lastmod>2022-05-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.turboyan.com/categories/index.html</loc>
-    
-    <lastmod>2022-05-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.turboyan.com/friends/index.html</loc>
-    
-    <lastmod>2022-05-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.turboyan.com/links/index.html</loc>
-    
-    <lastmod>2022-05-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.turboyan.com/books/index.html</loc>
-    
-    <lastmod>2022-05-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.turboyan.com/404.html</loc>
-    
-    <lastmod>2022-05-10</lastmod>
-    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
 
@@ -83,22 +121,36 @@
   <url>
     <loc>https://blog.turboyan.com/tags/MPU9250%E5%BA%95%E5%B1%82/</loc>
     <lastmod>2022-05-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.turboyan.com/tags/ubuntu/</loc>
+    <lastmod>2022-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.turboyan.com/tags/vscode/</loc>
+    <lastmod>2022-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.turboyan.com/tags/%E6%9C%88%E7%90%83%E7%81%AF/</loc>
     <lastmod>2022-05-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.turboyan.com/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/</loc>
     <lastmod>2022-05-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
 
@@ -106,15 +158,22 @@
   <url>
     <loc>https://blog.turboyan.com/categories/%E4%BB%A3%E7%A0%81/</loc>
     <lastmod>2022-05-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.turboyan.com/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2022-05-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.turboyan.com/categories/%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2022-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
 </urlset>
