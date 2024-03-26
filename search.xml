@@ -1,52 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>三句话为ubuntu20.04快速配置xrdp远程连接-基于gnome</title>
-    <url>/2020/11/02/xrdp_tutorial/</url>
-    <content><![CDATA[<p><img src="https://pic.turboyan.com/PicGoImg/20201213164509.png" alt="image-20201213164456399"></p>
-<blockquote>
-<p>系统环境：ubuntu 20.04</p>
-<p>桌面环境：Gnome</p>
-<p>远程桌面工具：windows（自带远程桌面），xrdp（Linux）</p>
-</blockquote>
-<span id="more"></span>
-<p>之前尝试了xfce4，xubuntu-desktop，都无一例外的好丑好丑，且语言环境还得重新配置</p>
-<p>他们都不太兼容xrdp，效果不是很好</p>
-<p>今天无意间看发现Gnome对xrdp适配效果不错，安装只需要简单的一个xrdp就可以，无需繁琐的配置文件</p>
-<p>安装命令如下：</p>
-<p>1、首先更新源</p>
-<blockquote>
-<p>sudo apt update</p>
-</blockquote>
-<p>2、安装xrdp</p>
-<blockquote>
-<p>sudo apt install xrdp</p>
-</blockquote>
-<p>3、由于xrdp使用的key仅仅只对ssl-cert用户组可读，需要将xrdp用户添加进ssl-cert用户组，如果不添加，可能导致黑屏</p>
-<blockquote>
-<p>sudo adduser xrdp ssl-cert</p>
-</blockquote>
-<p>4、最后重启xrdp应用更改，就可以使用远程桌面了</p>
-<blockquote>
-<p>sudo systemctl xrdp restart</p>
-</blockquote>
-<p>效果如下</p>
-<p><img src="https://pic.turboyan.com/PicGoImg/20201213170411.png" alt="image-20201213170411183"></p>
-<p><img src="https://pic.turboyan.com/PicGoImg/20201213170346.png" alt="image-20201213170345648"></p>
-<h1>P.S.</h1>
-<p>个人主页：<a href="https://www.turboyan.com">https://www.turboyan.com</a></p>
-<p>GitHub：<a href="https://github.com/TURBOyan">https://github.com/TURBOyan</a></p>
-<p>Email：turboisyan@foxmail.com</p>
-<p>公众号：特别白的盐</p>
-]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>ubuntu</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>使用vscode remote ssh功能远程连接服务器或树莓派时，报错Setting up SSH tunnel的解决办法！</title>
     <url>/2020/10/03/vscode_remote_ssh_tunnel/</url>
     <content><![CDATA[<p>当你想用vscode remote ssh 功能远程开发linux服务器、树莓派时，.vscode-server文件创建完成，但是一直显示卡在</p>
@@ -97,13 +51,13 @@
     <content><![CDATA[<p><img src="https://pic.turboyan.com/PicGoImg/MI_light" alt=""></p>
 <span id="more"></span>
 <p>​</p>
-<p><img src="https://pic.turboyan.com/PWM/RGB.gif" alt=""></p>
+<p><img src="https://pic.turboyan.com/local/1/2024/03/27/RGB.gif" alt=""></p>
 <p>​	上图所示的是电脑显示屏的微观图像，拍摄的方法非常有意思，通过在手机摄像头上滴一滴水滴，形成凸透镜，就能做成一个简易版的显微镜。</p>
 <p>​</p>
-<p><img src="https://pic.turboyan.com/PWM/camerawithwater.jpg" alt=""></p>
+<p><img src="https://pic.turboyan.com/local/1/2024/03/27/camerawithwater.jpg" alt=""></p>
 <p>​	从显微录像中也可以很明显的看到显示屏的一个个像素组成，我的ThinkPad显示屏共有1366列768排、近100万像素点，而每一个像素点，都由<code>红、绿、蓝</code>三种颜色组成。由RGB色彩的知识可以知道，通过对红绿蓝不同深度的<code>配比</code>，能调出世界上<code>所有的颜色</code>。</p>
 <p>​	这样一来，本来高级、难学的彩屏显示，就变得非常简单，我们只需要计算好每个像素的红绿蓝颜色深度，且主控芯片的频率足够高，让显示屏能在<code>20ms</code>(人眼的视觉暂留时间)内刷新完整一面图像，即可让显示屏连续的显示视频。</p>
-<p><img src="https://pic.turboyan.com/PWM/RGBMIX.gif" alt=""></p>
+<p><img src="https://pic.turboyan.com/local/1/2024/03/27/RGBMIX.gif" alt=""></p>
 <p>​	那么就有一个问题，就是如何让只能输出1和0两种数字状态的逻辑芯片，来控制RGB三色深度这连续的模拟量？</p>
 <p>​</p>
 <h4 id="模拟量控制的两种办法"><strong>模拟量控制的两种办法</strong></h4>
@@ -117,23 +71,23 @@
 <p>**1、**PWM从处理器到被控系统信号都是数字形式的，无需进行数模转换。</p>
 <p>**2、**让信号保持为数字形式可将噪声影响降到最小。噪声只有在强到足以将逻辑1改变为逻辑0或将逻辑0改变为逻辑1时，才能对数字信号产生影响。</p>
 <p>因此，因为他实现比较容易，且有极强的抗干扰能力，PWM被广泛应用于功率调节，通信等领域。而上文所说的显示屏像素的RGB配比，正是PWM在功率调节上的一个典型应用。</p>
-<p><img src="https://pic.turboyan.com/PWM/pwmduty.jpg" alt=""></p>
+<p><img src="https://pic.turboyan.com/local/1/2024/03/27/pwmduty.jpg" alt=""></p>
 <p>​</p>
 <h4 id="pwm的两个概念："><strong>PWM的两个概念：</strong></h4>
 <p><strong>1、周期/频率</strong></p>
 <p>​	周期是指一个PWM信号一个上升沿 ↑ 执行至下一个上升沿所需要的时间，一般用字母T表示。</p>
 <p>​    频率则是周期的倒数，即1/T。</p>
 <p>​</p>
-<p><img src="https://pic.turboyan.com/PWM/oscilloPWM.gif" alt=""></p>
+<p><img src="https://pic.turboyan.com/local/1/2024/03/27/oscilloPWM.gif" alt=""></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">频率为1Hz的PWM信号施加在LED上</span><br><span class="line">可以感受到肉眼可见的频闪</span><br></pre></td></tr></table></figure>
 <p>​</p>
-<p><img src="https://pic.turboyan.com/PWM/oscilloPWM2.gif" alt=""></p>
+<p><img src="https://pic.turboyan.com/local/1/2024/03/27/oscilloPWM2.gif" alt=""></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">频率为50Hz的PWM信号在LED灯上的体现</span><br><span class="line">人眼视觉暂留时间为20ms</span><br><span class="line">因此50Hz的信号足以让人眼感受不到频闪。</span><br></pre></td></tr></table></figure>
 <p>​</p>
 <p><strong>2、占空比</strong></p>
 <p>​	一个PWM信号内其中一个周期，高电平时间所占整个周期的百分比，即一个5V的直流信号相当于占空比为100%的PWM信号，一个0V的直流信号相当于占空比为0%的直流信号。</p>
 <p>​</p>
-<p><img src="https://pic.turboyan.com/PWM/oscilloPWM3.gif" alt=""></p>
+<p><img src="https://pic.turboyan.com/local/1/2024/03/27/oscilloPWM3.gif" alt=""></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">将PWM的占空比由0%慢慢提高到100%时LED亮度的变化</span><br></pre></td></tr></table></figure>
 <p>​</p>
 <hr>
@@ -142,9 +96,9 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">为什么PWM能控制LED亮度、电机的转速？</span><br></pre></td></tr></table></figure>
 <p>​	我在初学PWM的时候也有这样的困惑，也去网上查了很多资料，但是大部分都涉及到数学物理计算上，不仅难懂并且没有让人有看下去的欲望，时间长了也就放弃了搞懂他原理的冲动，有种食之无味弃之可惜的鸡肋感。</p>
 <p>​	后来偶然间，我看到了一种通俗易懂的解释方法，我也茅塞顿开，他的解释是，PWM的占空比越大，那么LED开启的<code>时间占比越大</code>，宏观上释放的<code>能量越高</code>，反之释放的<code>能量越低</code>，这样当<code>提高了频率</code>，让使用者<code>无法感受到开关量的变化</code>，就会使得LED的变亮或者变暗。</p>
-<p><img src="https://pic.turboyan.com/PWM/light1.gif" alt=""></p>
+<p><img src="https://pic.turboyan.com/local/1/2024/03/27/light1.gif" alt=""></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">小米台灯上的调光按钮，他其实不是一个可调电阻</span><br><span class="line">而是一个脉冲开关</span><br><span class="line">同样是利用了单片机来处理脉冲数据而输出PWM</span><br><span class="line">从而达到调光的效果</span><br></pre></td></tr></table></figure>
-<p><img src="https://pic.turboyan.com/PWM/light2.gif" alt=""></p>
+<p><img src="https://pic.turboyan.com/local/1/2024/03/27/light2.gif" alt=""></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">按下按钮并且旋转可以调节灯光的色温</span><br><span class="line">他是通过调节暖白色和亮白色两种LED亮度的配比</span><br><span class="line">来达到调节色温的目的</span><br><span class="line">同样使用到了PWM的技术</span><br></pre></td></tr></table></figure>
 <p>​</p>
 <hr>
@@ -167,7 +121,7 @@
   <entry>
     <title>【底层】MPU9250(电子指南针+六轴)通用底层（模拟IIC）</title>
     <url>/2020/07/03/MPU9250/</url>
-    <content><![CDATA[<p><img src="https://pic.turboyan.com/mpu9250_theme.jpg" alt=""></p>
+    <content><![CDATA[<p><img src="https://pic.turboyan.com/local/1/2024/03/27/mpu9250_theme.jpg" alt=""></p>
 <span id="more"></span>
 <table>
 <thead>
@@ -228,14 +182,14 @@
 <p><strong>一、克隆代码</strong></p>
 <p>这里我拿LPC546XX例程举例</p>
 <p>在你的工程文件夹内，任选一个位置，这里我选择了…/USER/</p>
-<p><img src="https://pic.turboyan.com/MPU9250project.jpeg" alt=""></p>
+<p><img src="https://pic.turboyan.com/local/1/2024/03/27/MPU9250project.jpeg" alt=""></p>
 <p>这个文件夹是专门放用户自己写的代码和底层用的</p>
 <p>在文件夹内右击git bash将代码克隆进去，具体办法<a href="http://mp.weixin.qq.com/s?__biz=MzI4MTU3MTYxMw==&amp;mid=2247483797&amp;idx=1&amp;sn=317e9fa6dde9a6eacd8b2f82b0ed1e30&amp;chksm=eba679e7dcd1f0f186cac2ddb5e965624de68eeb7918670c35a884eac9946e23fa36518ee81a&amp;scene=21#wechat_redirect">点击这里查看教程</a></p>
-<p><img src="https://pic.turboyan.com/gitbash.gif" alt=""></p>
+<p><img src="https://pic.turboyan.com/local/1/2024/03/27/gitbash.gif" alt=""></p>
 <p><strong>二、添加C文件和H文件路径到工程内</strong></p>
 <p>这部分比较容易</p>
 <p>如果有不会的同学可以自行百度</p>
-<p><img src="https://pic.turboyan.com/keilconfig.jpeg" alt=""></p>
+<p><img src="https://pic.turboyan.com/local/1/2024/03/27/keilconfig.jpeg" alt=""></p>
 <p><strong>三、修改配置文件</strong></p>
 <p>！！！！最关键的一步！！！！！</p>
 <p>这里要修改的非常少</p>
@@ -244,7 +198,7 @@
 <p>内部包含了传入的平台GPIO操作函数</p>
 <p>具体做法详见这个头文件</p>
 <p>都有详细注释</p>
-<p><img src="https://pic.turboyan.com/mpu9250_config.jpeg" alt=""></p>
+<p><img src="https://pic.turboyan.com/local/1/2024/03/27/mpu9250_config.jpeg" alt=""></p>
 <p><strong>三、调用函数读取模块数据</strong></p>
 <p>1、在需要读取MPU9250数据的头文件内包括MPU_ForUser.h文件</p>
 <p>2、查看MPU_ForUser.h内函数，并阅读调用说明</p>
@@ -254,7 +208,7 @@
 <p>3、执行一次Refresh_MPUTeam后，相对应的数据将刷新在结构体MPU_Data内，此结构体可在任何包括了MPU_ForUser的地方使用，是全局结构体。</p>
 <p>其他具体用法详见MPU_ForUser和MPU9250_Config内说明</p>
 <p><strong>备注：单片机和模块连接除了IIC的SCL、SDA引脚以外，还需连一根线从模块的INT到单片机的外部中断引脚，用作数据准备好的信号，中断触发的周期将由MPU9250_Config.h文件内的DEFAULT_MPU_HZ决定，也就是MPL的刷新频率，一般最高200Hz，这里默认是100hz</strong></p>
-<p><img src="https://pic.turboyan.com/mpu9250_use.jpg" alt=""></p>
+<p><img src="https://pic.turboyan.com/local/1/2024/03/27/mpu9250_use.jpg" alt=""></p>
 <h1>P.S.</h1>
 <p>个人主页：<a href="https://www.turboyan.com">https://www.turboyan.com</a></p>
 <p>GitHub：<a href="https://github.com/TURBOyan">https://github.com/TURBOyan</a></p>
